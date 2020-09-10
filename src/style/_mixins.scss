@@ -1,4 +1,7 @@
-@mixin heading($font-size) {
-  margin-top: 0;
-  font-size: $font-size;
+@mixin btn-varient($bg-color, $color) {
+  padding: 3px 30px;
+  border-radius: 60px;
+  border: solid 1px $primary-color;
+  background-color: $bg-color;
+  color: $color;
 }

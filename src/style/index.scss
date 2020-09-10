@@ -1,3 +1,26 @@
 @import "variables";
 @import "mixins";
 @import "reboot";
+
+.twitter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $basic-padding-y $basic-padding-x;
+  border-bottom: solid 1px $border-color;
+
+  .header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $heading-color;
+    margin: 0;
+  }
+
+  .btn-login {
+    @include btn-varient(transparent, $primary-color);
+  }
+
+  .btn-register {
+    @include btn-varient($primary-color, $white);
+  }
+}
