@@ -24,3 +24,44 @@
     @include btn-varient($primary-color, $white);
   }
 }
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.login {
+  @include form-varient(400px, 330px);
+
+  .form-title {
+    align-self: center;
+    font-size: 1.3rem;
+    color: $white;
+  }
+
+  .connection-character {
+    align-self: center;
+  }
+
+  .login-input {
+    color: $white;
+  }
+
+  a {
+    @include link-varient($primary-color, $white, none);
+    width: 30%;
+  }
+
+  .btn-form-login {
+    @include btn-varient(transparent, $primary-color);
+    width: 100%;
+  }
+
+  .btn-form-register {
+    @include btn-varient($primary-color, $white);
+    width: 100%;
+  }
+}
