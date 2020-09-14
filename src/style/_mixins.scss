@@ -5,7 +5,7 @@
   background-color: $bg-color;
   color: $color;
 }
-
+//todo feedback: varient单词拼写错误，应该是variant
 @mixin link-varient($color, $hover-volor, $decoration: false) {
   color: $color;
   text-decoration: $decoration;
@@ -14,6 +14,7 @@
   }
 }
 
+//todo feedback: varient单词拼写错误，应该是variant
 @mixin form-varient($height, $width) {
   display: flex;
   flex-flow: column;
