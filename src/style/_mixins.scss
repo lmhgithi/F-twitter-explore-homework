@@ -1,12 +1,14 @@
-@mixin btn-varient($bg-color, $color) {
+@use "variables";
+
+@mixin btn-variant($bg-color, $color) {
   padding: 3px 30px;
   border-radius: 60px;
-  border: solid 1px $primary-color;
+  border: solid 1px variables.$primary-color;
   background-color: $bg-color;
   color: $color;
 }
 //todo feedback: varient单词拼写错误，应该是variant
-@mixin link-varient($color, $hover-volor, $decoration: false) {
+@mixin link-variant($color, $hover-volor, $decoration: false) {
   color: $color;
   text-decoration: $decoration;
   &:hover {
@@ -15,13 +17,13 @@
 }
 
 //todo feedback: varient单词拼写错误，应该是variant
-@mixin form-varient($height, $width) {
+@mixin form-variant($height, $width) {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
-  border: 1px solid $border-color;
+  border: 1px solid variables.$border-color;
   border-radius: 10px;
-  padding: $basic-padding-y $basic-padding-x;
+  padding: variables.$basic-padding-y variables.$basic-padding-x;
   height: $height;
   width: $width;
 }
