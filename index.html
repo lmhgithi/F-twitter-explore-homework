@@ -10,7 +10,7 @@
 </head>
 <body>
   <header class="twitter-header">
-<!--todo feedback: 这里应该使用h标签，以为它是整个页面的标题。所以不应该使用p    -->
+<!--todo feedback: 这里应该使用h标签，因为它是整个页面的标题。所以不应该使用p    -->
     <p class="header-title">Twitter</p>
     <div class="header-right">
       <button class="btn-login">登录</button>
@@ -20,10 +20,12 @@
   <main class="main-content">
     <div class="login">
       <p class="form-title">查看世界上正在发生的事情</p>
+      <!--      TODO feedback: 语义化标签使用不正确：placeholder里面的内容应该放入<label>标签-->
       <input class="login-input" type="text" placeholder="电话、邮件地址或用户名">
       <input class="login-input" type="text" placeholder="密码">
       <a href="">忘记密码？</a>
       <button class="btn-form-login">登录</button>
+      <!--      TODO feedback: css class就简单地叫做'or'嘛-->
       <p class="connection-character">或</p>
       <button class="btn-form-register">注册</button>
     </div>

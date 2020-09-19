@@ -3,6 +3,7 @@
 @import "mixins";
 @import "reboot";
 
+//TODO feedback: 所有的css都放到这一个文件里面来了，应该分开抽到_header.scss和_main.scss里面
 .twitter-header {
   display: flex;
   justify-content: space-between;
