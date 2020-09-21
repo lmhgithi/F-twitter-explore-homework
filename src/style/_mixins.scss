@@ -6,6 +6,7 @@
   color: $color;
 }
 //todo feedback: varient单词拼写错误，应该是variant
+//TODO feedback: $hover-volor单词拼写错误，应该是$hover-color
 @mixin link-varient($color, $hover-volor, $decoration: false) {
   color: $color;
   text-decoration: $decoration;
