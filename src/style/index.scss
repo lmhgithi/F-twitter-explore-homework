@@ -1,6 +1,6 @@
 //todo feedback: 尝试把@import换成@use, 了解一下二者的区别
+@use "mixins";
 @import "variables";
-@import "mixins";
 @import "reboot";
 
 //TODO feedback: 所有的css都放到这一个文件里面来了，应该分开抽到_header.scss和_main.scss里面
@@ -11,19 +11,12 @@
   padding: $basic-padding-y $basic-padding-x;
   border-bottom: solid 1px $border-color;
 
-  .header-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: $heading-color;
-    margin: 0;
-  }
-
   .btn-login {
-    @include btn-varient(transparent, $primary-color);
+    @include mixins.btn-variant(transparent, $primary-color);
   }
 
   .btn-register {
-    @include btn-varient($primary-color, $white);
+    @include mixins.btn-variant($primary-color, $white);
   }
 }
 
@@ -36,7 +29,7 @@
 }
 
 .login {
-  @include form-varient(400px, 330px);
+  @include mixins.form-variant(400px, 330px);
 
   .form-title {
     align-self: center;
@@ -53,17 +46,17 @@
   }
 
   a {
-    @include link-varient($primary-color, $white, none);
+    @include mixins.link-variant($primary-color, $white, none);
     width: 30%;
   }
 
   .btn-form-login {
-    @include btn-varient(transparent, $primary-color);
+    @include mixins.btn-variant(transparent, $primary-color);
     width: 100%;
   }
 
   .btn-form-register {
-    @include btn-varient($primary-color, $white);
+    @include mixins.btn-variant($primary-color, $white);
     width: 100%;
   }
 }
